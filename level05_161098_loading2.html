@@ -8,6 +8,8 @@
     <meta name="description" content="Improve your mind.">
     <meta name="author" content="Leone Veiga">
 
+    <meta http-equiv="refresh" content="10;url=you_win.html" />
+
     <title>Plus and Times</title>
 
     <!-- Bootstrap Core CSS -->
@@ -29,7 +31,7 @@
       }
 
       #myBar {
-        width: 1%;
+        width: 100%;
         height:5vm;
         background-color: #18bc9c;
         font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -39,6 +41,7 @@
 </head>
 
 <body onload="myFunction(); myFunction2();">
+
 
 
 <!-- Facebook -->
@@ -53,24 +56,24 @@
 <!-- =========== -->
 
 
-
 <section >
 
   <script>
 
-      var minA = 0;
-      var maxA = 8;
-      var minB = 0;
-      var maxB = 8;
+      var minA = 1;
+      var maxA = 6;
+      var minB = -5;
+      var maxB = 0;
 
-      var xpc = 2;
+      var xpc = 1;
 
-      var next = "level03_218683_loading.html";
+      var next = "level05_161098.html"
 
   </script>
 
     <script src="js/plusandtimes-leone.js"></script>
- 
+
+
 <footer>
     <div class="container">
       <div class="row text-center" style="background-color:rgb(35,49, 64);">
@@ -81,9 +84,9 @@
           <p>
             <a> Levels: </a>
             <a href="level01_925148.html" class="btn-xs btn-default" style="background-color:rgb(139, 221, 206);">01</a>
-            <a href="level02_818074.html" class="btn-xs btn-default" style="background-color:rgb( 23, 186, 156);">02</a>
-            <a class="btn-xs btn-default" style="background-color:rgb(255, 255, 255);" disabled>03</a>
-            <a class="btn-xs btn-default" style="background-color:rgb(255, 255, 255);" disabled>04</a>
+            <a href="level02_818074.html" class="btn-xs btn-default" style="background-color:rgb(139, 221, 206);">02</a>
+            <a href="level03_218683.html" class="btn-xs btn-default" style="background-color:rgb(139, 221, 206);">03</a>
+            <a href="level04_844676.html" class="btn-xs btn-default" style="background-color:rgb( 23, 186, 156);">04</a>
             <a class="btn-xs btn-default" style="background-color:rgb(255, 255, 255);" disabled>05</a>
           </p>
           </div>
@@ -94,39 +97,26 @@
 
 
 <!--  <hr>  =============================================== -->
+<!--  <hr>  =============================================== -->
 <div class="container">
   <div class="row text-center">
     <div class="col-xs-3">
     </div>
     <div class="col-xs-6">
-      <h3>Level 02 (<i>Easy</i>)</h3>
+      <h3>Level 05 completed! </h3>
       <div id="myProgress">
-      <div id="myBar">0%</div>
+        <div id="myBar">100%</div>
       </div>
+      <h4><i>Loading ... </i></h4>
+      <h3 class="name" ><a style="color:#18bc9c;" class="fa fa-refresh fa-spin"> </a> </h3>
     </div>  
     <div class="col-xs-3"></div>
   </div>
 </div>
+
+
 <!-- <hr> =============================================== -->
-<div class="container">
-<div class="row text-center" >
-  <div class="col-xs-2"></div>
-  <div class="col-xs-8">
 
-    <div id="loader">
-      <h3 class="name" ><a style="color:#18bc9c;" class="fa fa-plus fa-spin"> </a> </h3>
-      <h3 class="name" ><a style="color:#18bc9c;" class="fa fa-times fa-spin"> </a> </h3>
-    </div>
-
-    <div style="display:none;" id="myDiv" class="animate-bottom">
-          <h3 class="name"> A <a style="color:rgb(201,48,44);">&plus;</a> B  = <a style="color:gray;" id="soma" ></a></h3>
-          <h3 class="name"> A <a style="color:rgb(201,48,44);">&times;</a> B  = <a style="color:gray;" id="produto"></a></h3>
-    </div>
-
-  </div>
-  <div class="col-xs-2"></div>
-</div>
-</div>
 <!--
 <i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
 <i class="fa fa-cog fa-spin" style="font-size:24px"></i>
@@ -178,8 +168,8 @@
                           <a type="button" class="btn btn-info"    onclick="PA0();" data-toggle="tooltip" 
                           data-placement="bottom" title="Clear"> C </a>
                           <a type="button" class="btn btn-primary" onclick="A0();">0</a>
-                          <a type="button" class="btn btn-basic"  onclick="MA0(); " disabled data-toggle="tooltip" 
-                          data-placement="bottom" title="Minus sign"> &minus; </a>          
+                          <a type="button" class="btn btn-danger"  onclick="MA0();" data-toggle="tooltip" 
+                          data-placement="bottom" title="Minus sign" > &minus; </a>          
                         </div>
                       </div>
 
@@ -237,9 +227,9 @@
                         <div class="row">
                           <div class="btn-group">
                           <a type="button" class="btn btn-info" onclick="PB0();" data-toggle="tooltip" 
-                          data-placement="bottom" title="Clear" > C </a>
+                          data-placement="bottom" title="Clear"> C </a>
                           <a type="button" class="btn btn-primary" onclick="B0();">0</a>
-                          <a type="button" class="btn btn-basic" onclick="MB0();" disabled data-toggle="tooltip" 
+                          <a type="button" class="btn btn-danger" onclick="MB0();" data-toggle="tooltip" 
                           data-placement="bottom" title="Minus sign"> &minus; </a>                        
                           </div>
                         </div>
@@ -297,6 +287,7 @@
 <script src="js/landing-page.js"></script>
 
 
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -307,7 +298,6 @@
   ga('send', 'pageview');
 
 </script>
-
 
 
   </body>
