@@ -8,6 +8,8 @@
     <meta name="description" content="Improve your mind.">
     <meta name="author" content="Leone Veiga">
 
+    <meta name="robots" content="noindex">
+
     <title>Plus and Times</title>
 
     <!-- Bootstrap Core CSS -->
@@ -40,13 +42,15 @@
 
 <body onload="myFunction(); myFunction2();">
 
+
+
 <!-- Facebook -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10';
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <!-- =========== -->
@@ -63,7 +67,7 @@
 
       var xpc = 1;
 
-      var next = "level05_161098.html"
+      var next = "level05_161098_loading.html";
 
   </script>
 
@@ -78,7 +82,7 @@
             <img style="vertical-align:middle" src="img/logo200.jpg" width="45" height="45"  >
             <span class="name" align="left" style="color:white; font-size:20px">  Plus and Times </span>
           <p>
-            <a> Níveis: </a>
+            <a> Levels: </a>
             <a href="level01_925148.html" class="btn-xs btn-default" style="background-color:rgb(139, 221, 206);">01</a>
             <a href="level02_818074.html" class="btn-xs btn-default" style="background-color:rgb(139, 221, 206);">02</a>
             <a href="level03_218683.html" class="btn-xs btn-default" style="background-color:rgb(139, 221, 206);">03</a>
@@ -98,7 +102,7 @@
     <div class="col-xs-3">
     </div>
     <div class="col-xs-6">
-      <h3>Nível 04 (<i>Difícil</i>)</h3>
+      <h3>Level 04 (<i>Hard</i>)</h3>
       <div id="myProgress">
       <div id="myBar">0%</div>
       </div>
@@ -131,7 +135,7 @@
 <i class="fa fa-cog fa-spin" style="font-size:24px"></i>
 -->
 
-<hr> <!-- =============================================== -->
+<!-- =============================================== -->
 <div class="container">
         <!-- Formulário e teclados -->
         <div class="row text-center">
@@ -175,10 +179,10 @@
                       <div class="row">
                         <div class="btn-group">
                           <a type="button" class="btn btn-info"    onclick="PA0();" data-toggle="tooltip" 
-                          data-placement="bottom" title="Limpar"> C </a>
+                          data-placement="bottom" title="Clear"> C </a>
                           <a type="button" class="btn btn-primary" onclick="A0();">0</a>
-                          <a type="button" class="btn btn-danger"  onclick="MA0(); " data-toggle="tooltip" 
-                          data-placement="bottom" title="Sinal negativo"> &minus; </a>          
+                          <a type="button" class="btn btn-danger"  onclick="MA0();" data-toggle="tooltip" 
+                          data-placement="bottom" title="Minus sign" > &minus; </a>          
                         </div>
                       </div>
 
@@ -196,7 +200,7 @@
               <h2> &nbsp; </h2>
               </div>
               <div class="row text-center">
-              <a href="#" onclick="compara();" class="btn btn-primary">Enviar</a>
+              <a href="#" onclick="compara();" class="btn btn-primary">Go</a>
             </div>
 
           </div>
@@ -236,10 +240,10 @@
                         <div class="row">
                           <div class="btn-group">
                           <a type="button" class="btn btn-info" onclick="PB0();" data-toggle="tooltip" 
-                          data-placement="bottom" title="Limpar"> C </a>
+                          data-placement="bottom" title="Clear"> C </a>
                           <a type="button" class="btn btn-primary" onclick="B0();">0</a>
                           <a type="button" class="btn btn-danger" onclick="MB0();" data-toggle="tooltip" 
-                          data-placement="bottom" title="Sinal negativo"> &minus; </a>                        
+                          data-placement="bottom" title="Minus sign"> &minus; </a>                        
                           </div>
                         </div>
                   </div>
@@ -266,18 +270,23 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-md-4">
-                <p class="copyright text-muted small">Script desenvolvido por <a href="http://www.leoneveiga.com.br" target="_blank"> Leone Veiga</a> - Brasil - 2017</p>
-            </div>
-            <div class="col-md-3">
-                <p class="copyright text-muted small">contact.plusandtimes@gmail.com</p>
-            </div>
-            <div class="col-md-4">
-                <p class="copyright text-muted small">Template adaptado do <a href="http://jekyllthemes.org/" target="_blank">Jekyll Themes</a></p>
+                <p class="copyright text-muted small">Script developed by <a href="#" > LV</a> - 2017</p>
             </div>
 
-            <div class="col-md-1">
-              <div class="fb-like" data-href="http://www.plusandtimes.com" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+            <div class="col-md-4">
+              <ul class="list-inline social-buttons">
+                  <li><a href="contato.html" title="email" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                  </li>
+                  <li><a href="https://www.facebook.com/plusandtimes" title="facebook" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                  </li>
+                  <div class="fb-like" data-href="http://www.plusandtimes.com" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+              </ul>
             </div>
+
+            <div class="col-md-4">
+                <p class="copyright text-muted small">Template adapted from <a href="http://jekyllthemes.org/" target="_blank">Jekyll Themes</a></p>
+            </div>
+
         </div>
     </div>
 </footer>

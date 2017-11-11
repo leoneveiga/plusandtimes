@@ -8,6 +8,8 @@
     <meta name="description" content="Improve your mind.">
     <meta name="author" content="Leone Veiga">
 
+    <meta name="robots" content="noindex">
+
     <title>Plus and Times</title>
 
     <!-- Bootstrap Core CSS -->
@@ -49,16 +51,18 @@
 
 	<body>
 
+
 <!-- Facebook -->
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10';
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <!-- =========== -->
+
 
 
 
@@ -69,11 +73,11 @@
         <div class="col-lg-12">
           <div class="intro-message">
             <img src="img/logo100.jpg">
-            <h1>Você venceu!!</h1>
-            <h3>Parabéns!!</h3>
+            <h1>You win!!</h1>
+            <h3>Congratulations!!</h3>
             <h3><img src="img/sunglass.png" class="img-emoticon-pat"></h3>
             <h3><div class="fb-like" data-href="http://www.plusandtimes.com" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div></h3>
-            <a href="special_level.html" class="btn btn-primary">Jogue o Nível Especial!!</a>
+            <a href="special_level.html" class="btn btn-primary">Play the Special Level</a>
           </div>
         </div>
       </div>
@@ -83,7 +87,7 @@
   <!-- /.intro-header -->
   </div>
 </section>
-
+		<!-- Footer -->
 
 
 
@@ -92,18 +96,23 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-md-4">
-                <p class="copyright text-muted small">Script desenvolvido por <a href="http://www.leoneveiga.com.br" target="_blank"> Leone Veiga</a> - Brasil - 2017</p>
-            </div>
-            <div class="col-md-3">
-                <p class="copyright text-muted small">contact.plusandtimes@gmail.com</p>
-            </div>
-            <div class="col-md-4">
-                <p class="copyright text-muted small">Template adaptado do <a href="http://jekyllthemes.org/" target="_blank">Jekyll Themes</a></p>
+                <p class="copyright text-muted small">Script developed by <a href="#" > LV</a> - 2017</p>
             </div>
 
-            <div class="col-md-1">
-              <div class="fb-like" data-href="http://www.plusandtimes.com" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+            <div class="col-md-4">
+              <ul class="list-inline social-buttons">
+                  <li><a href="contato.html" title="email" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                  </li>
+                  <li><a href="https://www.facebook.com/plusandtimes" title="facebook" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                  </li>
+                  <div class="fb-like" data-href="http://www.plusandtimes.com" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+              </ul>
             </div>
+
+            <div class="col-md-4">
+                <p class="copyright text-muted small">Template adapted from <a href="http://jekyllthemes.org/" target="_blank">Jekyll Themes</a></p>
+            </div>
+
         </div>
     </div>
 </footer>
