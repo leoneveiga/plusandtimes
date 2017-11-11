@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Improve your mind.">
+    <meta name="author" content="Leone Veiga">
+
+    <title>Plus and Times</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link rel="shortcut icon" href="img/favicon.ico"></link>
+
+    <style>
+      #myProgress {
+        width: 100%;
+        background-color: #ddd;
+      }
+
+      #myBar {
+        width: 1%;
+        height:5vm;
+        background-color: #18bc9c;
+        font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+      }
+    </style>
+
+</head>
+
+<body onload="myFunction(); myFunction2();">
+
+
+<!-- Facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- =========== -->
+
+
+
+<section >
+
+  <script>
+
+      var minA = 1;
+      var maxA = 6;
+      var minB = 1;
+      var maxB = 6;
+
+      var xpc = 2;
+
+      var next = "level02_818074_loading.html";
+
+  </script>
+
+  <script src="js/plusandtimes-leone.js"></script>
+
+
+<footer>
+    <div class="container">
+      <div class="row text-center" style="background-color:rgb(35,49, 64);">
+        <div class="col-xs-12">
+          <div>
+            <img style="vertical-align:middle" src="img/logo200.jpg" width="45" height="45"  >
+            <span class="name" align="left" style="color:white; font-size:20px">  Plus and Times </span>
+          <p>
+            <a> Levels: </a>
+            <a href="level01_925148.html" class="btn-xs btn-default" style="background-color:rgb( 23, 186, 156);">01</a>
+            <a class="btn-xs btn-default" style="background-color:rgb(255, 255, 255);" disabled>02</a>
+            <a class="btn-xs btn-default" style="background-color:rgb(255, 255, 255);" disabled>03</a>
+            <a class="btn-xs btn-default" style="background-color:rgb(255, 255, 255);" disabled>04</a>
+            <a class="btn-xs btn-default" style="background-color:rgb(255, 255, 255);" disabled>05</a>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+<!--  <hr>  =============================================== -->
+<div class="container">
+  <div class="row text-center">
+    <div class="col-xs-3">
+    </div>
+    <div class="col-xs-6">
+      <h3>Level 01 (<i>Beginner</i>)</h3>
+      <div id="myProgress">
+      <div id="myBar">0%</div>
+      </div>
+      
+    </div>  
+    <div class="col-xs-3"></div>
+  </div>
+</div>
+<!-- <hr> =============================================== -->
+<div class="container">
+<div class="row text-center" >
+  <div class="col-xs-2"></div>
+  <div class="col-xs-8">
+
+    <div id="loader">
+      <h3 class="name" ><a style="color:#18bc9c;" class="fa fa-plus fa-spin"> </a> </h3>
+      <h3 class="name" ><a style="color:#18bc9c;" class="fa fa-times fa-spin"> </a> </h3>
+    </div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+          <h3 class="name"> A <a style="color:rgb(201,48,44);">&plus;</a> B  = <a style="color:gray;" id="soma" ></a></h3>
+          <h3 class="name"> A <a style="color:rgb(201,48,44);">&times;</a> B  = <a style="color:gray;" id="produto"></a></h3>
+    </div>
+
+  </div>
+  <div class="col-xs-2"></div>
+</div>
+</div>
+<!--
+<i class="fa fa-refresh fa-spin" style="font-size:24px"></i>
+<i class="fa fa-cog fa-spin" style="font-size:24px"></i>
+-->
+
+<!--   <hr> =============================================== -->
+<div class="container">
+        <!-- Formulário e teclados -->
+        <div class="row text-center">
+          
+          <div class="col-md-2 col-xs-1"></div>
+          
+          <div class="col-md-3 col-xs-4">
+
+            <div class="row">
+
+                <div class="col-xs-1"></div>
+
+                <div class="col-xs-10">
+                      
+                      <form id="form_A" onkeypress="return event.keyCode != 13;" > 
+                          <h3 class="name"> A = <input style="color:blue; width: 50px; height:5vm; text-align:center;" type="text" name="Au" id="user_A" disabled="disabled" > </h3>
+                      </form>
+
+                      <!-- Teclado A -->
+                      <div class="row">
+                        <div class="btn-group">
+                          <a type="button" class="btn btn-primary" onclick="A1();">1</a>
+                          <a type="button" class="btn btn-primary" onclick="A2();">2</a>
+                          <a type="button" class="btn btn-primary" onclick="A3();">3</a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="btn-group">
+                          <a type="button" class="btn btn-primary" onclick="A4();">4</a>
+                          <a type="button" class="btn btn-primary" onclick="A5();">5</a>
+                          <a type="button" class="btn btn-primary" onclick="A6();">6</a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="btn-group">
+                          <a type="button" class="btn btn-primary" onclick="A7();">7</a>
+                          <a type="button" class="btn btn-primary" onclick="A8();">8</a>
+                          <a type="button" class="btn btn-primary" onclick="A9();">9</a>                    
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="btn-group">
+                          <a type="button" class="btn btn-info"    onclick="PA0();" data-toggle="tooltip" 
+                          data-placement="bottom" title="Clear"> C </a>
+                          <a type="button" class="btn btn-primary" onclick="A0();">0</a>
+                          <a type="button" class="btn btn-basic"  onclick="MA0(); " disabled data-toggle="tooltip" 
+                          data-placement="bottom" title="Minus sign"> &minus; </a>          
+                        </div>
+                      </div>
+
+                </div>
+
+                <div class="col-xs-1"></div>
+
+            </div>
+          </div>
+
+          <div class="col-md-2 col-xs-2">
+             <div class="row">
+             <h2> &nbsp; </h2>
+              <img  id="myImage" src="img/pensativo50.jpg" class="img-emoticon-pat" >
+              <h6 style="color:rgb(201,48,44);"> <b>Tips:</b> Order doesn't matter; Use the virtual keys. </h6>
+              </div>
+              <div class="row text-center">
+              <a href="#" onclick="compara();" class="btn btn-primary">Go</a>
+            </div>
+
+          </div>
+
+          <div class="col-md-3 col-xs-4">
+
+            <div class="row">
+                  
+                  <div class="col-xs-1"></div>
+
+                  <div class="col-xs-10">
+                        <form id="form_B" onkeypress="return event.keyCode != 13;" disabled>  
+                            <h3 class="name"> B = <input style="color:blue; width: 50px; height:5vm; text-align:center;" type="text" name="Bu" id="user_B" disabled="disabled" > </h3>
+                        </form>
+
+                        <div class="row">
+                          <div class="btn-group">
+                            <a type="button" class="btn btn-primary" onclick="B1();">1</a>
+                            <a type="button" class="btn btn-primary" onclick="B2();">2</a>
+                            <a type="button" class="btn btn-primary" onclick="B3();">3</a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="btn-group">
+                            <a type="button" class="btn btn-primary" onclick="B4();">4</a>
+                            <a type="button" class="btn btn-primary" onclick="B5();">5</a>
+                            <a type="button" class="btn btn-primary" onclick="B6();">6</a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="btn-group">
+                            <a type="button" class="btn btn-primary" onclick="B7();">7</a>
+                            <a type="button" class="btn btn-primary" onclick="B8();">8</a>
+                            <a type="button" class="btn btn-primary" onclick="B9();">9</a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="btn-group">
+                          <a type="button" class="btn btn-info" onclick="PB0();" data-toggle="tooltip" 
+                          data-placement="bottom" title="Clear"> C </a>
+                          <a type="button" class="btn btn-primary" onclick="B0();">0</a>
+                          <a type="button" class="btn btn-basic" onclick="MB0();" disabled data-toggle="tooltip" 
+                          data-placement="bottom" title="Minus sign"> &minus; </a>                        
+                          </div>
+                        </div>
+                  </div>
+
+                  <div class="col-xs-1"></div>
+            </div>
+          </div>
+
+          <div class="col-md-2 col-xs-1"></div>
+        </div>
+</div>
+<!-- =============================================== -->
+
+  <p style="font-size:0px">A = <a id="mostra_user_A"></a></p>
+  <p style="font-size:0px">B = <a id="mostra_user_B"></a></p>
+
+  <h6 style="font-size:0px"> A  = <a style="font-size:0px" id="n1"></a></h6>
+  <h6 style="font-size:0px"> B  = <a style="font-size:0px" id="n2"></a></h6>
+
+</section>
+
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <p class="copyright text-muted small">Script developed by <a href="http://www.leoneveiga.com.br" target="_blank"> Leone Veiga</a> - Brazil - 2017</p>
+            </div>
+            <div class="col-md-3">
+                <p class="copyright text-muted small">contact.plusandtimes@gmail.com</p>
+            </div>
+
+            <div class="col-md-4">
+                <p class="copyright text-muted small">Template adapted from <a href="http://jekyllthemes.org/" target="_blank">Jekyll Themes</a></p>
+            </div>
+
+            <div class="col-md-1">
+              <div class="fb-like" data-href="http://www.plusandtimes.com" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+		<!-- jQuery Version 1.11.0 -->
+<script src="js/jquery-1.11.0.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="js/landing-page.js"></script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-105804073-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+	</body>
+</html>
