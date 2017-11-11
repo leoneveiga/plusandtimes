@@ -311,6 +311,10 @@ p.copyright {
     height: 25px;
     }
 
+    .alert {
+    font-size: 10px;
+    }
+
 }
 
 @media(min-width:100px) {
@@ -338,6 +342,11 @@ p.copyright {
     width:  25px;
     height: 25px;
     }
+
+    .alert {
+    font-size: 10px;
+    }
+
 }
 
 @media(min-width:400px) {
@@ -365,6 +374,11 @@ p.copyright {
     width:  25px;
     height: 25px;
     }
+
+    .alert {
+    font-size: 10px;
+    }
+
 
 }
 
@@ -394,6 +408,12 @@ p.copyright {
     width:  25px;
     height: 25px;
     }
+
+    .alert {
+    font-size: 12px;
+    }
+
+
 }
 
 @media(min-width:800px) {
@@ -422,6 +442,12 @@ p.copyright {
     width:  25px;
     height: 25px;
     }
+
+    .alert {
+    font-size: 12px;
+    }
+
+
 }
 
 @media(min-width:1000px) {
@@ -450,6 +476,11 @@ p.copyright {
     width:  25px;
     height: 25px;
     }
+
+    .alert {
+    font-size: 12px;
+    }
+
 
 }
 
